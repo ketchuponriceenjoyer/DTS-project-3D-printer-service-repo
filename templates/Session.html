@@ -10,7 +10,34 @@
             <div class="navbar-links">
                 <a href="/Session">Sessions</a>
                 <a href="/images">Images</a>
+                <a href="/">Home</a>
             </div>
         </nav>
     </body>
+
+    <body2>
+        <form class="myform" method="post">
+            <div class="sessionbox">
+                <div class="form-label"> Enter Name </div>
+                <div class = "form-element "> <input type="text" required ></div>
+
+                <div class="form-label"> Enter address </div>
+                <div class = "form-element "> <input type="text" required ></div>
+
+                <div class="form-label"> choose a filament </div>
+                <div class = "form-element ">
+                    <select>
+                        <option filament="PLA">PLA</option>
+                        <option filament="ABS">ABS</option>
+                        <option filament="PETG">PETG</option>
+                        <option filament="TPU">TPU</option>
+                        <option filament="Nylon">Nylon</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+
+    </body2>
 {% endblock %}
