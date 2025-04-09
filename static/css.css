@@ -37,3 +37,11 @@ body2 {
     margin: 20px;
     text-align: center;
 }
+
+.model_container {
+    text-align: center;
+    width: 100px:
+    length: 100px:
+    background-color: rgb(255, 255, 255);
+    border: 15px solid #000000;
+}
