@@ -15,8 +15,10 @@
         </nav>
     </body>
 
+
+
     <body2>
-        <form class="myform" method="post">
+        <form class="myform" method="post" action="/upload" enctype="multipart/form-data">
             <div class="sessionbox">
                 <div class="form-label"> Enter Name </div>
                 <div class = "form-element "> <input type="text" required ></div>
@@ -36,10 +38,9 @@
                 </div>
                 <div class="form-label"> Enter size </div>
                 <div class = "form-element "> <input type="text" required ></div>
-                <div class="form-label"> drop fbx or jbl file in </div>
-                <div class = "model_container">  <input type="text" required >  </div>
+                <input type="file" name="fbx_file" accept = ".fbx" rows="5" cols="50">
+                <input type="submit" value= "Upload">
+
             </div>
-
-
     </body2>
-{% endblock %}
+{% endblock %}  1
