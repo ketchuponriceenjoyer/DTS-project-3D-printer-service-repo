@@ -21,27 +21,22 @@ nav {
     color: rgba(52, 152, 219, 1.0); /*light blue*/
 }
 
-body2 {
-    text-align: center;
-    width: 60vw;
-    margin: auto;
-    background-color: rgb(99, 236, 30);
-    color: rgb(224, 24, 24);
-}
 
 .sessionbox {
-    background-color: rgb(99, 236, 30);
-    width: 100px:
-    border: 15px solid green;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    border: 5px solid #000000;
     padding: 50px;
-    margin: 20px;
-    text-align: center;
+    margin: auto;
 }
 
 .model_container {
     text-align: center;
-    width: 100px:
-    length: 300px:
+    width: 100px;
+    length: 300px;
     background-color: rgb(255, 255, 255);
     border: 15px solid #000000;
+}
+div {
+    text-align: center;
 }

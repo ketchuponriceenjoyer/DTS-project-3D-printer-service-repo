@@ -15,20 +15,24 @@
         </nav>
     </body>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
+    <form class="myform" method="post" action="/upload" enctype="multipart/form-data">
+    <div class="sessionbox">
 
-    <body2>
-        <form class="myform" method="post" action="/upload" enctype="multipart/form-data">
-            <div class="sessionbox">
-                <div class="form-label"> Enter Name </div>
-                <div class = "form-element "> <input type="text" required ></div>
+        <div class="form-label"> Enter Name </div>
+        <div class = "form-element "> <input type="text" name = "Name" required ></div>
 
-                <div class="form-label"> Enter address </div>
-                <div class = "form-element "> <input type="text" required ></div>
+        <div class="form-label"> Enter address </div>
+        <div class = "form-element "> <input type="text" name = "Address" required ></div>
 
-                <div class="form-label"> choose a filament </div>
-                <div class = "form-element ">
-                    <select>
+        <div class="form-label"> choose a filament </div>
+        <div class = "form-element ">
+                    <select name = "Filament" >
                         <option filament="PLA">PLA</option>
                         <option filament="ABS">ABS</option>
                         <option filament="PETG">PETG</option>
@@ -36,11 +40,16 @@
                         <option filament="Nylon">Nylon</option>
                     </select>
                 </div>
-                <div class="form-label"> Enter size </div>
-                <div class = "form-element "> <input type="text" required ></div>
-                <input type="file" name="fbx_file" accept = ".fbx" rows="5" cols="50">
-                <input type="submit" value= "Upload">
 
-            </div>
-    </body2>
-{% endblock %}  1
+        <div class="form-label"> Enter size </div>
+        <div class = "form-element "> <input type="text" name = "Size" required ></div>
+
+        <div class="form-label"> Enter fbx </div>
+        <input type="file" name="Model_File" accept = ".fbx" rows="5" cols="50" required>
+        <br>
+        <br>
+        <input type="submit" value= "Upload">
+
+    </div>
+
+{% endblock %}
